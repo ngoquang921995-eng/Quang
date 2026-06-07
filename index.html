@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis | Creative Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân với thiết kế Bento Grid sang trọng, tối giản đen trắng và các chuyển động tương tác mượt mà.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Dot Grid -->
+    <div class="dot-grid-bg"></div>
+
+    <main class="portfolio-container">
+        <!-- Bento Grid Layout -->
+        <div class="bento-grid">
+            
+            <!-- [1] Hero Card (Intro) -->
+            <div class="bento-card hero-card" id="card-hero">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="badge">SẴN SÀNG LÀM VIỆC</div>
+                    <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Jarvis</span></h1>
+                    <h2 class="hero-subtitle">Một <span id="typing-text"></span></h2>
+                    <p class="hero-desc">Tôi thiết kế và phát triển các sản phẩm kỹ thuật số cao cấp với bố cục gọn gàng, hiệu ứng mượt mà và mã nguồn tối ưu.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Liên Hệ Ngay</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [2] Status Card (Pulsing Dot) -->
+            <div class="bento-card status-card" id="card-status">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="status-pulse-container">
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <span class="status-text">Đang nhận dự án Freelance</span>
+                    <span class="status-location">Hà Nội, Việt Nam</span>
+                </div>
+            </div>
+
+            <!-- [3] Skills Card (Tech Stack) -->
+            <div class="bento-card skills-card" id="card-skills">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Hộp Công Cụ</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" title="HTML5"><i data-lucide="html5"></i><span>HTML</span></div>
+                        <div class="skill-item" title="CSS3"><i data-lucide="codepen"></i><span>CSS</span></div>
+                        <div class="skill-item" title="JavaScript"><i data-lucide="code-2"></i><span>JS</span></div>
+                        <div class="skill-item" title="Node.js"><i data-lucide="server"></i><span>Node</span></div>
+                        <div class="skill-item" title="Git"><i data-lucide="git-branch"></i><span>Git</span></div>
+                        <div class="skill-item" title="Figma"><i data-lucide="figma"></i><span>Figma</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [4] Project 1 (Large Showcase) -->
+            <div class="bento-card project-card main-project" id="card-project-1">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project1.png" alt="Dự án 1 Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-tag">Web Application</span>
+                            <h4 class="project-name">Apex Dashboard</h4>
+                            <p class="project-description">Hệ thống quản lý tài chính thời gian thực với đồ thị trực quan và bảo mật tuyệt đối.</p>
+                            <a href="#" class="project-link"><i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [5] Project 2 (Vertical Showcase) -->
+            <div class="bento-card project-card side-project" id="card-project-2">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project2.png" alt="Dự án 2 Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-tag">E-Commerce</span>
+                            <h4 class="project-name">Vibe Store</h4>
+                            <p class="project-description">Trang thương mại điện tử thời trang tối giản.</p>
+                            <a href="#" class="project-link"><i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [6] About Card -->
+            <div class="bento-card about-card" id="card-about">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Triết Lý Làm Việc</h3>
+                    <p class="about-text">"Sự đơn giản là đỉnh cao của sự tinh tế." Tôi tin rằng thiết kế tốt không chỉ là những gì mắt nhìn thấy, mà còn là cách nó vận hành mượt mà và giải quyết các bài toán thực tế.</p>
+                </div>
+            </div>
+
+            <!-- [7] Stats Card -->
+            <div class="bento-card stats-card" id="card-stats">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="stat-group">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Năm Kinh Nghiệm</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-group">
+                        <span class="stat-number" data-target="48">0</span>
+                        <span class="stat-label">Dự Án Hoàn Thành</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [8] Social Card -->
+            <div class="bento-card social-card" id="card-social">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Kết Nối</h3>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [9] Contact / CTA Card -->
+            <div class="bento-card contact-card" id="contact">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="contact-header">
+                        <h2 class="contact-title">Bắt đầu một dự án mới?</h2>
+                        <p class="contact-subtitle">Hãy liên hệ với tôi để cùng nhau hiện thực hóa ý tưởng của bạn.</p>
+                    </div>
+                    <div class="email-copy-wrapper">
+                        <button id="copy-email-btn" class="email-btn" data-email="hello@jarvis.design">
+                            <span class="email-address">hello@jarvis.design</span>
+                            <span class="copy-badge">
+                                <i data-lucide="copy" class="copy-icon"></i>
+                                <span class="copy-text">Sao chép</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i data-lucide="check-circle" class="toast-icon"></i>
+        <span class="toast-message">Đã sao chép địa chỉ email!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Khởi tạo Lucide Icons sau khi CDN tải xong
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
